@@ -18,10 +18,10 @@ public class PromedioNotas16 {
     public static void main(String[] args) {
         // TODO
         int cantidadNotas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de notas"));
-        int i = 0;
+        int i = 1;
         float notaAcumulada = 0;
-        while ( i<cantidadNotas ) {
-            float nota = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la nota número " + i));
+        while ( i<=cantidadNotas ) {
+            float nota = Float.parseFloat(JOptionPane.showInputDialog("Ingrese la nota número " + i));
             if (nota>=0 && nota<=5) {
                 notaAcumulada = notaAcumulada + nota;
                 i++;
